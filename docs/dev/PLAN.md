@@ -65,3 +65,17 @@ Space lands at the ghost destination with the remaining full-interval delay; pla
 ### Milestone 3.3 — Phase review
 
 After all delivery milestones complete and close, review the complete phase code and interactions, verify its included contracts and prior-phase regressions, repair blockers and retain the phase report. No later independent capability is required at this exit. Integrate the verified phase into main through an explicit two-parent merge, verify/publish the target, then publish the corresponding v0.3.0 tag and GitHub release with current release notes. No phase or release operation executes without the subsequently authorized implementation range.
+
+## Phase 4 — Dynamic ghost visibility
+
+Outcome: Ghost visibility follows the projected cells at the board midline without altering gameplay. Penetrator and player configuration are excluded.
+
+Contracts: R-GHOST. Release target: v0.4.0. Dependency: Phase 3 complete, reviewed, closed and integrated/published; authorized implementation range includes this phase.
+
+### Milestone 4.1 — Midline-aware ghost
+
+A straddling ghost hides and a wholly lower-half ghost appears immediately on relevant state changes. Exit: integrate the milestone capability, review code and run applicable focused/regression checks; fix blockers, retain a milestone report and HANDOFF. Demonstrate the stated result for human continue/amend/simplify/stop judgment without inventing an additional authorization gate.
+
+### Milestone 4.2 — Phase review
+
+After all delivery milestones complete and close, review the complete phase code and interactions, verify its included contracts and prior-phase regressions, repair blockers and retain the phase report. No later independent capability is required at this exit. Integrate the verified phase into main through an explicit two-parent merge, verify/publish the target, then publish the corresponding v0.4.0 tag and GitHub release with current release notes. No phase or release operation executes without the subsequently authorized implementation range.
