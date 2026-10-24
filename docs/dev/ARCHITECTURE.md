@@ -42,3 +42,7 @@ The landing service selects an ordinary first-obstacle destination or a penetrat
 ## Configuration boundary
 
 A typed settings owner stores selected values. Presentation reads display settings immediately; spawn snapshots mechanical settings into the active-piece state. The settings panel dispatches typed changes rather than touching the board. Pending changes are visible beside controls; restarting adopts the selected settings. The settings owner is page-session memory and has no persistence side effects.
+
+## Browser persistence adapters
+
+Settings codecs are pure allowlist parsers. A persistence adapter reads URL query and cookies at startup, resolves each key separately, and writes valid explicit URL values into cookies. A selected-value change attempts cookie storage and URL replacement independently after updating session state. Browser APIs stay outside Rules; persistence cannot mutate active-piece mechanics or block gameplay. URL changes preserve unrelated parameters/hash and use history replacement without navigation. Failed storage/history operations expose a concise notice while retaining selected session values.
