@@ -34,3 +34,7 @@ Piece supply owns a seeded-testable 7-bag queue; hold owns its slot and cycle el
 ## Ghost presentation policy
 
 A pure visibility predicate consumes the landing projection and board geometry. It classifies the topmost occupied projected cell against the midline. The policy never changes the active piece, collision handling, supply or clock. Presentation recomputes it from each published snapshot so it cannot lag a changed landing.
+
+## Penetrator landing strategy
+
+The landing service selects an ordinary first-obstacle destination or a penetrator deepest valid destination. The engine owns activation eligibility, bonus debit/award, and mode lifetime; all movement, gravity, ghost and hard drop use this same strategy. Transient overlap is represented only by the active piece, never by overwriting settled cells. Candidate moves require a legal destination at or below them; a grounded penetrator is at its terminal destination. This prevents a piece from passing below every legal locking position.
