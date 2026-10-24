@@ -97,3 +97,21 @@ White active/settled penetrators, ghost agreement and bonus symbols are clear in
 ### Milestone 5.3 — Phase review
 
 After all delivery milestones complete and close, review the complete phase code and interactions, verify its included contracts and prior-phase regressions, repair blockers and retain the phase report. No later independent capability is required at this exit. Integrate the verified phase into main through an explicit two-parent merge, verify/publish the target, then publish the corresponding v0.5.0 tag and GitHub release with current release notes. No phase or release operation executes without the subsequently authorized implementation range.
+
+## Phase 6 — Session configuration
+
+Outcome: Six side-panel settings govern current display and the next piece mechanics; next preview is observable without consuming supply. No cookie/URL persistence.
+
+Contracts: R-SETTINGS. Release target: v0.6.0. Dependency: Phase 5 complete, reviewed, closed and integrated/published; authorized implementation range includes this phase.
+
+### Milestone 6.1 — Settings model and preview
+
+Typed session defaults and selected/effective boundaries preserve current-piece behavior. Exit: integrate the milestone capability, review code and run applicable focused/regression checks; fix blockers, retain a milestone report and HANDOFF. Demonstrate the stated result for human continue/amend/simplify/stop judgment without inventing an additional authorization gate.
+
+### Milestone 6.2 — Configuration controls and round integration
+
+Six keyboard-accessible controls show pending mechanics and govern complete rounds. Exit: integrate the milestone capability, review code and run applicable focused/regression checks; fix blockers, retain a milestone report and HANDOFF. Demonstrate the stated result for human continue/amend/simplify/stop judgment without inventing an additional authorization gate.
+
+### Milestone 6.3 — Phase review
+
+After all delivery milestones complete and close, review the complete phase code and interactions, verify its included contracts and prior-phase regressions, repair blockers and retain the phase report. No later independent capability is required at this exit. Integrate the verified phase into main through an explicit two-parent merge, verify/publish the target, then publish the corresponding v0.6.0 tag and GitHub release with current release notes. No phase or release operation executes without the subsequently authorized implementation range.
