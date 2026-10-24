@@ -1,8 +1,8 @@
 # Project handoff
 
-Checkpoint: main documentation initialization, pass 1. Recover later work from Git and the owning records below.
+Checkpoint: scope 1 DOCS-008 completion, strict autodoc/autoloop. Recover subsequent operations from Git and owning records.
 
-Outcome: root guidance preserved; manual provenance scaffold integrated and published. Documentation tasks/control created; product documents and implementation not complete.
+Outcome: current cumulative documents through TASKS and scoped QC prepared; next predefined scope reset remains authorized. No implementation or package QC is claimed.
 
 ## Workflow and sources
 
@@ -13,7 +13,7 @@ Outcome: root guidance preserved; manual provenance scaffold integrated and publ
 ## Scope and human decisions
 
 - Authorized: prepare six cumulative scopes in strict autodoc/autoloop mode; per-pass and cross-scope proposals are in DOCS_PREPARATION.
-- Next stop: first PROJECT approval before architecture. Subsequent PROJECT approvals are waived; complete only the six supplied passes and stop after final DOCS-008 before package QC/integration/implementation.
+- Next stop: perform only the next predefined reset, retain prior ranges and reopen the same eight issues before PROJECT revision.
 - Tracking: enabled by root AGENTS; milestone #1 and preparation issues #1–9 verified. Push/read back each owned commit. Standard reporting.
 - Implementation requires subsequent authorization. Releases are required after each later verified integrated implementation phase.
 
@@ -27,5 +27,5 @@ Outcome: root guidance preserved; manual provenance scaffold integrated and publ
 
 ## Pending work and next action
 
-- Publish/read back initialization; close/read back issue #1 before PROJECT work. Later effects may already be complete; reconcile owning records and Git.
-- Next eligible action: publish pass-1 PROJECT proposal and obtain its human acceptance; leave DOCS-002 unchecked until then.
+- Publish/read back scope 1 DOCS-008 completion, then close/read back issue #8. Confirm DOCS-009 issue #9 and milestone #1 remain open.
+- Next: reset to scope 2, reopen/read back issues #2–9, then revise retained PROJECT through TASKS.
