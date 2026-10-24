@@ -36,4 +36,8 @@ Projection supplies deepest-valid search as an alternate landing strategy and re
 
 ## Settings components
 
-Settings model owns selected enum/Boolean values and documented defaults. Engine receives a mechanical-settings snapshot only on spawning a new active piece, including Hold replacements. Renderer/Status view consume current display settings and show selected versus effective mechanics. Settings panel validates control events and dispatches typed changes; it preserves a disabled Hold slot. Application creates settings once for the page lifetime and retains them through restart. No cookie or URL adapter participates in this arrangement.
+Settings model owns selected enum/Boolean values and documented defaults. Engine receives a mechanical-settings snapshot only on spawning a new active piece, including Hold replacements. Renderer/Status view consume current display settings and show selected versus effective mechanics. Settings panel validates control events and dispatches typed changes; it preserves a disabled Hold slot. Application creates settings once for the page lifetime and retains them through restart. Persistence is delegated to the browser adapters below; the settings model remains pure.
+
+## Persistence components
+
+Settings codec maps stable external names/values to typed settings without browser dependencies. Resolver independently combines URL, cookie and default for each key and reports which explicit URL values require cookie writes. Cookie adapter owns namespaced reads/writes and readback failure; URL adapter owns search parsing and replaceState with unrelated content preservation. A persistence coordinator calls both adapters after selected-value changes, exposes failures through Status view, and never rewrites an active mechanical snapshot. Initialization resolves settings before the first spawn, preventing a transient default-configured piece.
