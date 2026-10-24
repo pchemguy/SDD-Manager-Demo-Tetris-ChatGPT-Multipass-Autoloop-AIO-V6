@@ -12,6 +12,8 @@ Play includes shuffled 7-bag supply, once-per-cycle Hold, a projected ghost, hor
 
 The ghost hides whenever any projected occupied cell lies above the board midline. A straddling ghost is hidden and one whose topmost cell is exactly at the midline is visible.
 
+Players earn one penetrator bonus for a four-line clear, up to three. A hotkey spends a bonus to turn the active piece white until lock. It traverses occupied cells without destruction, lands in the deepest safe placement, and uses the same destination for ghost and hard drop. Hold is disabled while active; the side panel shows each available bonus.
+
 ## Qualities, constraints and exclusions
 
 Keep gameplay local and self-contained, with responsive input, distinguishable occupied/empty/active states, labeled controls and reliable restart. Chromium is the primary verification browser; managed Firefox is also required by the repository browser policy. Actual compatibility requires later execution evidence. Multiplayer, accounts, network leaderboards, mobile touch, audio and speed-level progression are outside the target.
