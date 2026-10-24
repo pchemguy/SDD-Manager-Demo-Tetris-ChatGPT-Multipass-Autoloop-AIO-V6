@@ -25,3 +25,7 @@ Invalid commands are ordinary no-op results. Unsupported rendering is handled at
 ## Assisted-play components
 
 Supply maintains the shuffled queue and draw cursor; consuming a piece is explicit. Hold stores a shape identity, not a pose, and one-use eligibility. Engine owns spawn on hold and loss on blocked replacement. Projection takes board, active shape/rotation/column and landing strategy and returns a destination without consuming supply or changing time. Rotation chooses the first legal kicked pose; Grounding tracks grounded-start/deadline through motion and clock advances. Renderer and Status view consume ghost/hold information but cannot debit draws or reset timers.
+
+## Visibility component
+
+Ghost visibility accepts projected occupied cells and visible board height, returning a Boolean. Renderer owns its application on every redraw; Engine and Projection remain independent of whether a ghost is drawn. Tests cover positions entirely above, straddling and exactly at the midline.
