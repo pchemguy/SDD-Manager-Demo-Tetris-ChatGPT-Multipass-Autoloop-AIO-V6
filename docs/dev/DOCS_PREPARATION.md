@@ -52,8 +52,8 @@ These are agent proposals for the first PROJECT checkpoint, not assertions of hu
 
 | Task | Current evidence / decision basis |
 | --- | --- |
-| DOCS-001 | All four root guidance files existed and were preserved byte for byte against c3042851137db6c467c591c9c65450f2f7fe6fc5. Task template copied from bundled 0.15.2 source with only DOCS-001 checked. Initialization includes this record and HANDOFF. Publication and issue closure follow this commit and require readback. |
-| DOCS-002 | Pass 1 PROJECT proposal pending; first human approval required. |
+| DOCS-001 | All four root guidance files existed and were preserved byte for byte against c3042851137db6c467c591c9c65450f2f7fe6fc5. Task template copied from bundled 0.15.2 source with only DOCS-001 checked. Initialization includes this record and HANDOFF. Initialization commit e750fd9e849d7e35b400ec4291ddebbb46348f21 was pushed/read back exactly; issue #1 was closed as completed and individually read back with milestone #1 association. |
+| DOCS-002 | Pass 1 proposal: PROJECT.md SHA-256 7e19287725d97e6e8b56e4f554b4af14a99b9ba9e6ffeec9e06578742d7d9965. First human approval pending; DOCS-002 remains unchecked and issue #2 open. Reviewed against the supplied classic scope: complete principal gameplay, no later-scope leakage, proportionate brief, proposed assumptions explicitly identified, no implementation claims. README disclosure/navigation links verified. No separate PROJECT QC report is required. |
 | DOCS-003–008 | Not authored. Scoped autodoc preapproval applies after initial PROJECT acceptance. |
 | DOCS-009 | Unselected; remains pending at final autoloop stop. |
 
@@ -68,4 +68,4 @@ Material decisions: the proposed exploration choices above await initial accepta
 
 ## Pending transitions
 
-Publish/read back this initialization commit, then close/read back DOCS-001 issue #1. DOCS-002 remains open until actual first PROJECT approval and its owning completion commit. Recover actual effects from Git and GitHub before retrying; a stored pending note does not override later verified state.
+Publish/read back this PROJECT proposal, then await first human acceptance of its exact state and the proposed cross-scope choices. DOCS-002 remains unchecked and issue #2 open. No architecture or later product documents may be authored until acceptance. Initialization publication and issue closure are verified.
