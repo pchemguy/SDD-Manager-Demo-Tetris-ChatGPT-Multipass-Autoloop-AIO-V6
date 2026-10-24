@@ -4,7 +4,7 @@
 
 - Mode: autodoc/autoloop, explicitly requested with six predefined cumulative scopes.
 - Delivery mode: strict multipass (default); preserve earlier PLAN/TASKS ranges, identities, membership, order, dependencies and exits. Add later scope through subsequent bounded phases. Flexible integration has not been authorized.
-- Current pass: 2. Cursor: DOCS-008; authoritative checkboxes are in DOCS_TASKS.
+- Current pass: 2. Cursor: DOCS-009; authoritative checkboxes are in DOCS_TASKS.
 - Approval basis: first PROJECT approved by the user ("Approve") for published proposal 4956e55ca34db646224af4c647958cc4cc6d5d47, PROJECT SHA-256 7e19287725d97e6e8b56e4f554b4af14a99b9ba9e6ffeec9e06578742d7d9965 and its cross-scope proposals. Later PROJECT approvals are waived under the announced autoloop policy; ARCHITECTURE through TASKS are preapproved within each agreed scope. New material choices after first approval are delegated to the agent, with visible rationale and durable records.
 - Tracking: enabled for preparation and implementation by root AGENTS.md. The sdd-docs-main milestone #1 and DOCS-001–009 issues #1–9 were created from this repository's bundled fixed definitions and individually read back before repository modifications.
 - Publication: push/read back each owned commit before progression. Standard reporting; Minimal and Explicit profiles are available.
@@ -61,7 +61,7 @@ The user accepted the initial PROJECT and these interaction proposals by replyin
 | DOCS-005 | Pass 2: SPEC.md SHA-256 078665f0bcc266461dff794fe255e059cd796ef9385b15e8e8f79461398d4dd7; SPEC-REVIEW-REPORT.md SHA-256 188e002c5503078035200a49f6371de6d0acef097e7f3547e455a1fc553dff2c. Current-scope owner review and linked adjacent QC where required passed; unchanged retained inputs reviewed for current applicability. Scoped autodoc/autoloop preapproval from initial PROJECT acceptance; publication and issue closure follow this completion commit. |
 | DOCS-006 | Pass 2: PLAN.md SHA-256 cefe88d1910a19bb1dae6941a50a5533addfb32a599e7e65b4a5f6a433eb627a; PLAN-REVIEW-REPORT.md SHA-256 8c2c5f0e17c9d8a7fe352c3a33b7ee7ed35079bea8eee2022cb85f057a3495c5. Current-scope owner review and linked adjacent QC where required passed; unchanged retained inputs reviewed for current applicability. Scoped autodoc/autoloop preapproval from initial PROJECT acceptance; publication and issue closure follow this completion commit. |
 | DOCS-007 | Pass 2: layout.md SHA-256 738087000c740213070df238cd196e79d3d86e0d49a8e4b0640eec188ffa1b17; PLAN-REVIEW-REPORT.md SHA-256 5279706dd4c314e4e62a09b9ae08ad02025bc3d8c8a7c41bc2c781c1228c5b7f. Current-scope owner review and linked adjacent QC where required passed; unchanged retained inputs reviewed for current applicability. Scoped autodoc/autoloop preapproval from initial PROJECT acceptance; publication and issue closure follow this completion commit. |
-| DOCS-008 | Pass 1: TASKS.md SHA-256 4bacd142eb5cb0c0abf2227b42f30e69bab2d3ddfa8bf49cd9c02cb55b2915b5; TASKS-REVIEW-REPORT.md SHA-256 6ab687f95b78c2f481bfffed4a19233138eeba40aec6b1848099701ff99c8f65. Current-scope owner review and linked adjacent QC where required passed; unchanged retained inputs reviewed for current applicability. Scoped autodoc/autoloop preapproval from initial PROJECT acceptance; publication and issue closure follow this completion commit. |
+| DOCS-008 | Pass 2: TASKS.md SHA-256 5b8d734fb815883560333cbba91a686c1547f791634b6b692a4d4d30ea8b5ddf; TASKS-REVIEW-REPORT.md SHA-256 5026612e328f9bace81a09b9e146602f94e99b6a5e64597f1318b88d23d761d4. Current-scope owner review and linked adjacent QC where required passed; unchanged retained inputs reviewed for current applicability. Scoped autodoc/autoloop preapproval from initial PROJECT acceptance; publication and issue closure follow this completion commit. |
 | DOCS-009 | Unselected; remains pending at final autoloop stop. |
 
 Material decisions: initial exploration choices above are accepted; later material details are delegated under autoloop. No product implementation is authorized.
@@ -77,6 +77,10 @@ Material decisions: initial exploration choices above are accepted; later materi
 
 Phase 1: T-001–T-007. Earlier established blocks remain byte-identical. All applicable initial cross-scope decisions were reviewed and carried forward; current owner QC is in the adjacent reports. No unresolved document blocker was retained. Required next effects: completion commit publication and issue #8 closure.
 
+## Scope 2 delivery ranges and checks
+
+Phase 1: T-001–T-007; Phase 2: T-008–T-013; Phase 3: T-014–T-018. Earlier established blocks remain byte-identical. All applicable initial cross-scope decisions were reviewed and carried forward; current owner QC is in the adjacent reports. No unresolved document blocker was retained. Required next effects: completion commit publication and issue #8 closure.
+
 ## Pending transitions
 
-Publish/read back this pass-2 DOCS-007 completion, then close/read back issue #7. Recover actual later effects before retrying. Next eligible document: DOCS-008.
+Publish/read back this pass-2 DOCS-008 completion, then close/read back issue #8. Recover actual later effects before retrying. Next: authorized next-pass reset; final pass stops before DOCS-009.
