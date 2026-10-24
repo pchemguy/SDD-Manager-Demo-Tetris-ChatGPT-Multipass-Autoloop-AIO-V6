@@ -4,11 +4,11 @@
 
 - Mode: autodoc/autoloop, explicitly requested with six predefined cumulative scopes.
 - Delivery mode: strict multipass (default); preserve earlier PLAN/TASKS ranges, identities, membership, order, dependencies and exits. Add later scope through subsequent bounded phases. Flexible integration has not been authorized.
-- Current pass: 6. Cursor: DOCS-009; authoritative checkboxes are in DOCS_TASKS.
+- Current pass: 6 complete through DOCS-008. Stopped before DOCS-009; no next pass or package-QC task is selected. Authoritative checkboxes are in DOCS_TASKS.
 - Approval basis: first PROJECT approved by the user ("Approve") for published proposal 4956e55ca34db646224af4c647958cc4cc6d5d47, PROJECT SHA-256 7e19287725d97e6e8b56e4f554b4af14a99b9ba9e6ffeec9e06578742d7d9965 and its cross-scope proposals. Later PROJECT approvals are waived under the announced autoloop policy; ARCHITECTURE through TASKS are preapproved within each agreed scope. New material choices after first approval are delegated to the agent, with visible rationale and durable records.
 - Tracking: enabled for preparation and implementation by root AGENTS.md. The sdd-docs-main milestone #1 and DOCS-001–009 issues #1–9 were created from this repository's bundled fixed definitions and individually read back before repository modifications.
 - Publication: push/read back each owned commit before progression. Standard reporting; Minimal and Explicit profiles are available.
-- Next boundary: execute the predefined loop through pass-6 DOCS-008, then stop before DOCS-009, whole-package QC, documentation integration or implementation.
+- Next boundary: stop. All six predefined passes are complete through DOCS-008. An explicit advance is required to select DOCS-009 whole-package QC; documentation integration and implementation retain their separate gates.
 
 ## Scope sequence
 
@@ -102,4 +102,6 @@ Phase 1: T-001–T-007; Phase 2: T-008–T-013; Phase 3: T-014–T-018; Phase 4:
 
 ## Pending transitions
 
-Publish/read back this pass-6 DOCS-008 completion, then close/read back issue #8. Recover actual later effects before retrying. Next: authorized next-pass reset; final pass stops before DOCS-009.
+No further pass is authorized. Final DOCS-008 completion c5d8e0909fdaa5c6145a1904eb2a31f054c1fc7b was published/read back; issue #8 is closed as completed. Issues #1–8 are closed, issue #9 and milestone #1 remain open, and all nine issue/milestone associations were verified. DOCS-009 is unchecked and no package report was created. Product implementation tasks remain unchecked.
+
+Targeted final checks confirmed exact retained phase/task blocks against all six DOCS-008 checkpoints, current scoped QC source hashes, root navigation and a clean worktree. These checks do not constitute whole-package QC. Stop before package QC, documentation integration and implementation; await explicit next-stage direction.

@@ -27,5 +27,6 @@ Outcome: current cumulative documents through TASKS and scoped QC prepared; six 
 
 ## Pending work and next action
 
-- Publish/read back scope 6 DOCS-008 completion, then close/read back issue #8. Confirm DOCS-009 issue #9 and milestone #1 remain open.
-- Stop. An explicit advance may select package QC; implementation still needs authorization and integrated preparation.
+- Final DOCS-008 completion c5d8e0909fdaa5c6145a1904eb2a31f054c1fc7b was published/read back and issue #8 closure verified. Preparation issues #1–8 are closed; issue #9 and milestone #1 are open with verified associations.
+- Seven delivery phases and 37 implementation/review tasks remain pending. Earlier phase/task blocks and current per-document QC source hashes passed targeted checks; this is not whole-package QC.
+- Publish/read back this stopping-boundary clarification. No further pass is authorized. Stop before DOCS-009, package QC, documentation integration or implementation. An explicit advance may select package QC; implementation still requires its own authorization and integrated preparation.
