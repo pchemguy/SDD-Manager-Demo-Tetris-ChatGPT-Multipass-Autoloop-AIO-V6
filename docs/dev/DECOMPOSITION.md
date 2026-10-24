@@ -33,3 +33,7 @@ Ghost visibility accepts projected occupied cells and visible board height, retu
 ## Penetrator components
 
 Projection supplies deepest-valid search as an alternate landing strategy and rejects candidates with no legal landing at/below them. Engine owns bonuses (0–3), active penetrator flag, activation debit, hold rejection and four-line award. Grounding consumes the selected destination, so overlapping transit cannot start a lock timer. Board resolution revalidates final non-overlap before committing; a failed invariant never partially writes. Renderer overrides every active penetrator cell to white and Status view displays one bonus symbol per available charge. A locked penetrator retains white cells on the board; regular tetromino palettes exclude white.
+
+## Settings components
+
+Settings model owns selected enum/Boolean values and documented defaults. Engine receives a mechanical-settings snapshot only on spawning a new active piece, including Hold replacements. Renderer/Status view consume current display settings and show selected versus effective mechanics. Settings panel validates control events and dispatches typed changes; it preserves a disabled Hold slot. Application creates settings once for the page lifetime and retains them through restart. No cookie or URL adapter participates in this arrangement.
