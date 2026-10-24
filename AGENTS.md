@@ -43,3 +43,9 @@ Follow `sdd-manage`'s preparation and phase-activation workflows for required tr
 ## Project guidance
 
 Maintain project-specific navigation and validated setup/check commands here as they become established. Do not invent commands, paths, requirements or completion claims.
+
+## Tetris project navigation
+
+This is a static single-player desktop-keyboard Tetris project. The current product target is defined by [PROJECT](docs/dev/PROJECT.md), [ARCHITECTURE](docs/dev/ARCHITECTURE.md), [DECOMPOSITION](docs/dev/DECOMPOSITION.md) and [SPEC](docs/dev/SPEC.md). [PLAN](docs/dev/PLAN.md) and [layout](docs/dev/layout.md) own delivery and proposed physical placement; [TASKS](docs/dev/TASKS.md) owns product implementation work.
+
+Source/test paths in layout are planned; product implementation and setup/test commands have not been validated. Recover current preparation authority and the stopping boundary through [HANDOFF](docs/dev/HANDOFF.md) and [DOCS_PREPARATION](docs/dev/DOCS_PREPARATION.md) before acting. Read applicable nested instructions for the paths being changed.

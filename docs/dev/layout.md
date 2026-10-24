@@ -35,4 +35,8 @@ Deep landing stays in src/game/landing.ts; activation/bonuses/timing stay in src
 
 ## Configuration placement
 
-src/config/settings.ts owns typed values/defaults and selected state; src/ui/settings.ts owns accessible controls. Engine types own the mechanical snapshot. tests/unit/settings.test.ts and tests/browser/settings.spec.ts cover the boundary. These paths have no persistence adapter or cookie/history effects.
+src/config/settings.ts owns typed values/defaults and selected state; src/ui/settings.ts owns accessible controls. Engine types own the mechanical snapshot. tests/unit/settings.test.ts and tests/browser/settings.spec.ts cover the boundary. Settings state and UI have no direct cookie/history effects; adapters below own persistence.
+
+## Persistence placement
+
+src/config/codec.ts owns external key/value parsing; src/config/persistence.ts owns resolution and save coordination. src/platform/cookies.ts and src/platform/url.ts exclusively own browser persistence APIs. tests/unit/persistence.test.ts covers independent precedence/failures; tests/browser/persistence.spec.ts covers actual reload/cookie/history behavior. Update settings placement so src/config/settings.ts remains a pure selected-values owner; persistence effects belong only to the new adapters/coordinator.
