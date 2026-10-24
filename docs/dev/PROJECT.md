@@ -14,6 +14,8 @@ The ghost hides whenever any projected occupied cell lies above the board midlin
 
 Players earn one penetrator bonus for a four-line clear, up to three. A hotkey spends a bonus to turn the active piece white until lock. It traverses occupied cells without destruction, lands in the deepest safe placement, and uses the same destination for ghost and hard drop. Hold is disabled while active; the side panel shows each available bonus.
 
+Six side-panel settings select ghost visibility, hard drop, next preview, hard-drop lock policy, general lock policy and Hold. Display changes apply immediately; mechanical changes apply at the next piece. Settings stay within the page session and restart retains them. Next preview does not consume supply.
+
 ## Qualities, constraints and exclusions
 
 Keep gameplay local and self-contained, with responsive input, distinguishable occupied/empty/active states, labeled controls and reliable restart. Chromium is the primary verification browser; managed Firefox is also required by the repository browser policy. Actual compatibility requires later execution evidence. Multiplayer, accounts, network leaderboards, mobile touch, audio and speed-level progression are outside the target.
