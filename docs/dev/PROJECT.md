@@ -14,7 +14,9 @@ The ghost hides whenever any projected occupied cell lies above the board midlin
 
 Players earn one penetrator bonus for a four-line clear, up to three. A hotkey spends a bonus to turn the active piece white until lock. It traverses occupied cells without destruction, lands in the deepest safe placement, and uses the same destination for ghost and hard drop. Hold is disabled while active; the side panel shows each available bonus.
 
-Six side-panel settings select ghost visibility, hard drop, next preview, hard-drop lock policy, general lock policy and Hold. Display changes apply immediately; mechanical changes apply at the next piece. Settings stay within the page session and restart retains them. Next preview does not consume supply.
+Six side-panel settings select ghost visibility, hard drop, next preview, hard-drop lock policy, general lock policy and Hold. Display changes apply immediately; mechanical changes apply at the next piece. Restart retains selected settings. Next preview does not consume supply.
+
+All six settings restore independently from explicit valid URL value, saved cookie or default, in that order. Selected-value changes save cookies and update URL parameters without reloading. Explicit valid URL values, including defaults, save to cookies; omitted parameters preserve saved values. Invalid input falls through independently and failed persistence preserves usable session state.
 
 ## Qualities, constraints and exclusions
 
