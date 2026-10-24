@@ -45,10 +45,16 @@ Use a Fisher–Yates shuffle of I,O,T,J,L,S,Z with injectable draws, consuming e
 
 ## R-DROP — Ghost, kicks and grounded timing
 
-Ordinary landing is the last legal pose reached by descending one row at a time before the first collision/floor. Ghost uses exactly this destination without mutating model, timer, hold or supply; render a hollow outline distinct from the active piece and settled cells. If destination equals active pose, omit duplicate ghost drawing. Hold slot is visible with an empty state.
+Ordinary landing is the last legal pose reached by descending one row at a time before the first collision/floor. Ghost uses exactly this destination without mutating model, timer, hold or supply, subject to the visibility policy; render a hollow outline distinct from the active piece and settled cells. If destination equals active pose, omit duplicate ghost drawing. Hold slot is visible with an empty state.
 
 For clockwise or counterclockwise rotation, try horizontal anchor offsets [0,−1,+1,−2,+2] in that order at unchanged y. Accept the first fully legal candidate; reject if none. O remains unchanged and does not shift. These are horizontal wall kicks, not a claim of Guideline SRS; no upward or vertical kicks are required.
 
 Space invokes hard drop to the same destination as ghost and awards no drop points. Ignore repeated keydown for Hold and hard drop. The default lock policy is full-interval: begin a 1000ms deadline at first grounding, including immediate spawn on support. Lateral/rotation movement retaining support keeps the existing deadline. Leaving support cancels it; later grounding starts a new full interval. A successful soft descent resets the gravity interval and recomputes support. Failed down/hard-drop repetitions do not reset grounding. Hard drop reaching ground begins a deadline only when no valid grounded deadline exists; hard drop on an already grounded piece keeps the remaining time. Lock at deadline even without another down attempt. Fail-down policy, when selected for an increment requiring it, locks on a failed down attempt; reaching a destination by hard drop alone is not a failed attempt. Time suspension preserves all remaining durations.
 
 Acceptance A-ASSIST: two complete bag draws contain seven unique shapes each; Hold draw/swap/block/repeat semantics are exact; ghost and hard-drop landing agree on irregular stacks; edge rotations select the first legal kick or no-op; full-interval lock survives repeated input and cancels/restarts only on actual loss/regain of support. Test exact deadlines and a spawn that is already grounded.
+
+## R-GHOST — Conditional visibility
+
+Dynamic mode shows a non-duplicate ghost only when the minimum y of all projected occupied cells is at least 10. Any projected cell at y<10 hides the whole ghost, including a piece straddling rows 9 and 10. A topmost cell exactly on row 10 is visible. Recompute after movement, rotation, Hold, gravity, stack changes and restart; visibility never changes destination, timers or legality.
+
+Acceptance A-GHOST: fixture landings entirely above, straddling, exactly on and below the midline produce the specified full-ghost visibility after each state transition; the active piece remains visible regardless of ghost status.
