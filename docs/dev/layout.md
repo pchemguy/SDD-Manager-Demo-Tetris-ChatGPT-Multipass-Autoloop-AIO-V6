@@ -28,3 +28,7 @@ Landing projection belongs to src/game/landing.ts with tests/unit/landing.test.t
 ## Ghost policy placement
 
 src/game/ghost.ts owns the pure visibility predicate; tests/unit/ghost.test.ts owns boundary fixtures. Board renderer consumes its result. The path represents one focused rule, not a second landing calculation.
+
+## Penetrator placement
+
+Deep landing stays in src/game/landing.ts; activation/bonuses/timing stay in src/game/engine.ts and shared state types. Board renderer and Status view own white cells/bonus symbols. Extend existing unit/browser suites with layered-stack fixtures under tests/fixtures; do not create a duplicate game engine.
