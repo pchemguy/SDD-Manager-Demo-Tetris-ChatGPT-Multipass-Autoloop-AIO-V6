@@ -4,7 +4,7 @@
 
 - Mode: autodoc/autoloop, explicitly requested with six predefined cumulative scopes.
 - Delivery mode: strict multipass (default); preserve earlier PLAN/TASKS ranges, identities, membership, order, dependencies and exits. Add later scope through subsequent bounded phases. Flexible integration has not been authorized.
-- Current pass: 5. Cursor: DOCS-009; authoritative checkboxes are in DOCS_TASKS.
+- Current pass: 6, cumulative scope from the predefined sequence. Cursor: DOCS-002; retained documents are revision inputs, not current-pass completion.
 - Approval basis: first PROJECT approved by the user ("Approve") for published proposal 4956e55ca34db646224af4c647958cc4cc6d5d47, PROJECT SHA-256 7e19287725d97e6e8b56e4f554b4af14a99b9ba9e6ffeec9e06578742d7d9965 and its cross-scope proposals. Later PROJECT approvals are waived under the announced autoloop policy; ARCHITECTURE through TASKS are preapproved within each agreed scope. New material choices after first approval are delegated to the agent, with visible rationale and durable records.
 - Tracking: enabled for preparation and implementation by root AGENTS.md. The sdd-docs-main milestone #1 and DOCS-001–009 issues #1–9 were created from this repository's bundled fixed definitions and individually read back before repository modifications.
 - Publication: push/read back each owned commit before progression. Standard reporting; Minimal and Explicit profiles are available.
@@ -72,7 +72,7 @@ Material decisions: initial exploration choices above are accepted; later materi
 
 - Root files retained: AI_DISCLOSURE.md, SDD-MANAGER.md, AGENTS.md and SKILL_DISCOVERY_PROTOCOL.md. None copied or altered. All-present case permits continuation to the PROJECT proposal without an initialization approval pause.
 - Manual provenance: default enabled. Seed 943225c54c354cc4566c0c4c55f38933e9cd2b2a from main c3042851137db6c467c591c9c65450f2f7fe6fc5 contains the two byte-identical bundled scaffold files and necessary token exclusion. Explicit two-parent merge into main: bd2bfc52a4f8f923981d656ff048e4f8e3990e95. Both branch publications were read back as matching before design-docs/main creation. No transcript was recorded.
-- Current reset: from scope 4 completed checkpoint 3b8330a5bf58487261f51fb8d521f2fd3e7f3d46 to scope 5; predefined autoloop authorization after initial PROJECT approval. DOCS-001 retained; DOCS-002–009 unchecked. Existing documents, decisions and phase/task ranges retained.
+- Current reset: from scope 5 completed checkpoint 53a5f0624ae0ca54cd8d18a1c4225c55e52bd828 to scope 6; predefined autoloop authorization after initial PROJECT approval. DOCS-001 retained; DOCS-002–009 unchecked. Existing documents, decisions and phase/task ranges retained.
 - Prior-pass evidence: scope 1 DOCS-008 checkpoint b1b773dfc0d643e8fd5e26bfc28189007f1579e7; later resets retain their own Git checkpoints and range summaries.
 
 ## Scope 1 delivery ranges and checks
@@ -97,4 +97,4 @@ Phase 1: T-001–T-007; Phase 2: T-008–T-013; Phase 3: T-014–T-018; Phase 4:
 
 ## Pending transitions
 
-Publish/read back this pass-5 DOCS-008 completion, then close/read back issue #8. Recover actual later effects before retrying. Next: authorized next-pass reset; final pass stops before DOCS-009.
+Publish/read back this reset, then reopen/read back the same issues #2–9 with reset evidence and verify milestone #1 stays open before any document revision. Protected phases: 1, 2, 3, 4, 5, 6; protected task range: T-001–T-032. Prior PLAN SHA-256 92144ded1b8ab0b753c7a29fd208e7050c127f191d88e6a8b9987d70e59239f4; prior TASKS SHA-256 22d1f70b65b3b87625a31689a8a32d05f9d50bd79b817a7a43ca8968f5391ec9.
