@@ -32,3 +32,7 @@ src/game/ghost.ts owns the pure visibility predicate; tests/unit/ghost.test.ts o
 ## Penetrator placement
 
 Deep landing stays in src/game/landing.ts; activation/bonuses/timing stay in src/game/engine.ts and shared state types. Board renderer and Status view own white cells/bonus symbols. Extend existing unit/browser suites with layered-stack fixtures under tests/fixtures; do not create a duplicate game engine.
+
+## Configuration placement
+
+src/config/settings.ts owns typed values/defaults and selected state; src/ui/settings.ts owns accessible controls. Engine types own the mechanical snapshot. tests/unit/settings.test.ts and tests/browser/settings.spec.ts cover the boundary. These paths have no persistence adapter or cookie/history effects.
