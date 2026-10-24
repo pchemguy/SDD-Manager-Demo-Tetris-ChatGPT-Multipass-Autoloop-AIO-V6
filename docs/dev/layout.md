@@ -24,3 +24,7 @@ Development roots and adjacent scoped QC reports live in docs/dev/. Implementati
 ## Assisted-play placement
 
 Landing projection belongs to src/game/landing.ts with tests/unit/landing.test.ts. Hold and grounded timing remain engine state, supply remains in its own module, and Hold controls/slot remain Status view and Input adapter responsibilities. No separate framework or duplicate collision implementation is introduced.
+
+## Ghost policy placement
+
+src/game/ghost.ts owns the pure visibility predicate; tests/unit/ghost.test.ts owns boundary fixtures. Board renderer consumes its result. The path represents one focused rule, not a second landing calculation.
