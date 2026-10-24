@@ -115,3 +115,21 @@ Six keyboard-accessible controls show pending mechanics and govern complete roun
 ### Milestone 6.3 — Phase review
 
 After all delivery milestones complete and close, review the complete phase code and interactions, verify its included contracts and prior-phase regressions, repair blockers and retain the phase report. No later independent capability is required at this exit. Integrate the verified phase into main through an explicit two-parent merge, verify/publish the target, then publish the corresponding v0.6.0 tag and GitHub release with current release notes. No phase or release operation executes without the subsequently authorized implementation range.
+
+## Phase 7 — Persistent configuration
+
+Outcome: Per-key URL/cookie/default resolution restores all settings, saves explicit values and updates shareable URLs without navigation. Preserve session/mechanical boundaries.
+
+Contracts: R-PERSIST. Release target: v0.7.0. Dependency: Phase 6 complete, reviewed, closed and integrated/published; authorized implementation range includes this phase.
+
+### Milestone 7.1 — Resolution and storage adapters
+
+Each setting resolves independently with defensive parsing and scoped cookie/URL effects. Exit: integrate the milestone capability, review code and run applicable focused/regression checks; fix blockers, retain a milestone report and HANDOFF. Demonstrate the stated result for human continue/amend/simplify/stop judgment without inventing an additional authorization gate.
+
+### Milestone 7.2 — Persistence round trips
+
+Real reload/open and URL sharing preserve selected/effective play without regressions. Exit: integrate the milestone capability, review code and run applicable focused/regression checks; fix blockers, retain a milestone report and HANDOFF. Demonstrate the stated result for human continue/amend/simplify/stop judgment without inventing an additional authorization gate.
+
+### Milestone 7.3 — Phase review
+
+After all delivery milestones complete and close, review the complete phase code and interactions, verify its included contracts and prior-phase regressions, repair blockers and retain the phase report. No later independent capability is required at this exit. Integrate the verified phase into main through an explicit two-parent merge, verify/publish the target, then publish the corresponding v0.7.0 tag and GitHub release with current release notes. No phase or release operation executes without the subsequently authorized implementation range.
