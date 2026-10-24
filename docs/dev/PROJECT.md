@@ -10,6 +10,8 @@ Use a 10×20 board, the seven tetrominoes, fixed-speed gravity, collision-safe p
 
 Play includes shuffled 7-bag supply, once-per-cycle Hold, a projected ghost, horizontal wall kicks and hard drop. A piece normally locks after one full gravity interval from becoming grounded, including after hard drop. Supported movement does not renew the deadline; leaving support permits a fresh interval on re-grounding.
 
+The ghost hides whenever any projected occupied cell lies above the board midline. A straddling ghost is hidden and one whose topmost cell is exactly at the midline is visible.
+
 ## Qualities, constraints and exclusions
 
 Keep gameplay local and self-contained, with responsive input, distinguishable occupied/empty/active states, labeled controls and reliable restart. Chromium is the primary verification browser; managed Firefox is also required by the repository browser policy. Actual compatibility requires later execution evidence. Multiplayer, accounts, network leaderboards, mobile touch, audio and speed-level progression are outside the target.
