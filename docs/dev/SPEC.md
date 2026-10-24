@@ -10,7 +10,7 @@ The visible board has 10 columns (x=0–9) and 20 rows (y=0–19), increasing do
 
 Spawn orientations use these square masks (slash separates rows): I `..../IIII/..../....`; O `OO/OO`; T `.T./TTT/...`; J `J../JJJ/...`; L `..L/LLL/...`; S `.SS/SS./...`; Z `ZZ./.ZZ/...`. The square size is n. Spawn anchor is (floor((10−n)/2),0). A clockwise rotation maps each local cell (x,y) to (n−1−y,x); counterclockwise is its inverse. O remains unchanged. Four clockwise rotations restore the same cells. Rotation without kicks accepts only the rotated pose at the current anchor. No occupied cell may escape the top boundary during regular play; an invalid lock/top overflow is a loss without committing invalid cells.
 
-Independent supply maps each uniform draw u in [0,1) to floor(7u), using order I,O,T,J,L,S,Z. A new game clears all settled cells, sets score to 0, resets supply and spawns one piece. The random source is injectable for deterministic rules tests; seeded replay is a test capability, not a required player feature.
+Supply uses the bag contract in R-SUPPLY; injected draws are in [0,1). A new game clears all settled cells, sets score to 0, resets supply and spawns one piece. The random source is injectable for deterministic rules tests; seeded replay is a test capability, not a required player feature.
 
 ## R-TIME — Input and game lifecycle
 
@@ -20,7 +20,7 @@ Gravity attempts one downward step every 1000ms of game time. Successful manual 
 
 ## R-CLEAR — Line resolution and score
 
-After lock, find all full rows simultaneously, remove them, shift remaining rows down without changing their order, and insert empty rows at the top. Award 100/300/500/800 points for 1/2/3/4 rows in that lock, respectively; 0 for none. Do not award points for moves, soft drops or hard drops. Score never carries across restart. Gravity remains fixed; no speed levels are required.
+After lock, find all full rows simultaneously, remove them, shift remaining rows down without changing their order, and insert empty rows at the top. Award 100/300/500/800 points for 1/2/3/4 rows in that lock, respectively; 0 for none. Do not award points for moves or soft drops. Score never carries across restart. Gravity remains fixed; no speed levels are required.
 
 ## R-VIEW — Presentation and accessibility
 
@@ -28,7 +28,7 @@ Show board, active/settled piece cells, score, game state and control hints. Col
 
 ## R-QUALITY — Delivery and verification
 
-Production output is a static asset directory with locally bundled runtime assets. No network service, personal browser session or CDN is needed for gameplay. Build/dependency tooling may require network provisioning; compatibility is determined by the locked toolchain during implementation. Test deterministic geometry, lock/spawn, row clearing, scoring, restart and time suspension, then serve the actual application and exercise real keyboard/focus, visible Canvas and status behavior in isolated Chromium headless shell and managed Firefox under BROWSER_DEV_POLICY.md. Required failure on either browser blocks its acceptance claim; diagnose supported fallbacks rather than dropping coverage. No browser installation is needed for documentation authoring.
+Production output is a static asset directory with locally bundled runtime assets. No network service, personal browser session or CDN is needed for gameplay. Build/dependency tooling may require network provisioning; compatibility is determined by the locked toolchain during implementation. Test deterministic geometry, lock/spawn, row clearing, scoring, restart and time suspension, then serve the actual application and exercise real keyboard/focus, visible Canvas and status behavior in isolated Chromium headless shell and managed Firefox under BROWSER_DEV_POLICY.md. Required failure on either browser blocks its acceptance claim; diagnose supported fallbacks rather than dropping coverage.
 
 ## Acceptance routes
 
@@ -38,3 +38,17 @@ Production output is a static asset directory with locally bundled runtime asset
 | A-CLEAR | Fixtures for 0–4 simultaneous rows produce exact compacted boards and stated score; restart produces empty board/zero score/fresh active piece. |
 | A-TIME | Boundary-time and repeated-input checks preserve event order; hidden/blur suspends without catch-up; explicit resume/restart does not duplicate input or loops. |
 | A-VIEW | Real served page accepts controls, isolates focused controls, renders recognizable occupied/empty/active cells, shows score/loss/restart and builds self-contained assets in both required browsers. |
+
+## R-SUPPLY — Bag and Hold
+
+Use a Fisher–Yates shuffle of I,O,T,J,L,S,Z with injectable draws, consuming exactly one of each before the next shuffled bag. Hold (C or labeled action) is permitted once between locks; first Hold stores the outgoing shape and consumes one supply shape, subsequent cycles swap without a draw. Stored shape has no position, rotation, timer or penetrator state. Incoming shape uses canonical spawn orientation/anchor and a fresh piece clock; a blocked incoming spawn loses immediately. A second Hold before lock is a no-op. Restart empties Hold and resets its eligibility and supply. Hold affects only shape identity, never score or settled cells.
+
+## R-DROP — Ghost, kicks and grounded timing
+
+Ordinary landing is the last legal pose reached by descending one row at a time before the first collision/floor. Ghost uses exactly this destination without mutating model, timer, hold or supply; render a hollow outline distinct from the active piece and settled cells. If destination equals active pose, omit duplicate ghost drawing. Hold slot is visible with an empty state.
+
+For clockwise or counterclockwise rotation, try horizontal anchor offsets [0,−1,+1,−2,+2] in that order at unchanged y. Accept the first fully legal candidate; reject if none. O remains unchanged and does not shift. These are horizontal wall kicks, not a claim of Guideline SRS; no upward or vertical kicks are required.
+
+Space invokes hard drop to the same destination as ghost and awards no drop points. Ignore repeated keydown for Hold and hard drop. The default lock policy is full-interval: begin a 1000ms deadline at first grounding, including immediate spawn on support. Lateral/rotation movement retaining support keeps the existing deadline. Leaving support cancels it; later grounding starts a new full interval. A successful soft descent resets the gravity interval and recomputes support. Failed down/hard-drop repetitions do not reset grounding. Hard drop reaching ground begins a deadline only when no valid grounded deadline exists; hard drop on an already grounded piece keeps the remaining time. Lock at deadline even without another down attempt. Fail-down policy, when selected for an increment requiring it, locks on a failed down attempt; reaching a destination by hard drop alone is not a failed attempt. Time suspension preserves all remaining durations.
+
+Acceptance A-ASSIST: two complete bag draws contain seven unique shapes each; Hold draw/swap/block/repeat semantics are exact; ghost and hard-drop landing agree on irregular stacks; edge rotations select the first legal kick or no-op; full-interval lock survives repeated input and cancels/restarts only on actual loss/regain of support. Test exact deadlines and a spawn that is already grounded.
