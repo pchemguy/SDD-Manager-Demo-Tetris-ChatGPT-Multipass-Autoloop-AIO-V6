@@ -25,4 +25,8 @@ Settled cells are always in bounds and non-overlapping. Only a successful legal 
 
 ## Verification seams
 
-Rules accept deterministic random and clock inputs. Session checks use synthetic time and complete snapshots; browser checks use the real page, keyboard/focus/visibility handling and inspected Canvas output. Test fixtures may construct model states through exported typed engine functions; production code contains no test-only global mutation hook. Browser-independent checks do not establish browser compatibility. No installed package or working browser is claimed during design.
+Rules accept deterministic random and clock inputs. Session checks use synthetic time and complete snapshots; browser checks use the real page, keyboard/focus/visibility handling and inspected Canvas output. Test fixtures may construct model states through exported typed engine functions; production code contains no test-only global mutation hook. Browser-independent checks do not establish browser compatibility.
+
+## Piece services and projections
+
+Piece supply owns a seeded-testable 7-bag queue; hold owns its slot and cycle eligibility. The engine exposes a pure landing projection for the active pose. The renderer draws a ghost from that result and never performs its own collision search. Rotation search uses documented horizontal kick candidates; lock timing remains a game-clock concern in the engine, driven by Session. This keeps keyboard and gravity behavior consistent. Hold produces a fresh active piece through the same spawn path and resets that piece's local timing.
