@@ -4,9 +4,9 @@
 
 State: Ready for dependent PLAN authoring.
 
-Reviewed: SPEC.md: SHA-256 87e822bb79c7c7de42e0314804a9bc0b6bf31f97e590e71178ae462979b3b2f3.
+Reviewed: SPEC.md: SHA-256 f4e68e22dfa11436cc4f0f3ee17058b7aa97f8a629b89b08a1f8f13f452c6069.
 
-Governing inputs: PROJECT.md: SHA-256 ca19ba84895c26c0256d0255d1236b90ab6fd55380ae9786e6cab9f3426f6d5b; ARCHITECTURE.md: SHA-256 2a377c37a55d6834491062486d7b636f22dfb3c5f7cce2408c8d3edfa24e7db5; DECOMPOSITION.md: SHA-256 47308c7ea7ba7d41311267c090b56967cf20d78233b75adeecca3956148ff835.
+Governing inputs: PROJECT.md: SHA-256 d5796fd5238ef991d841d02e3d6e0499de4eca91202aa83568c5883a5c6a3fd4; ARCHITECTURE.md: SHA-256 d04caed300d5a3ac837227093e6792eacddc6dcf16829e621cce5bdaa07e2d84; DECOMPOSITION.md: SHA-256 c13ae10fb7ebfc5155d95ad5cbbaee1878a3c1e5ca0ce9c157bd6326cef77946.
 
 Checks: semantic owner review of contract/design coverage, boundaries, dependency order, error/lifecycle obligations and end-state language; deterministic structural checks validate Markdown/link/hierarchy invariants. All confirmed current-scope findings resolved. No code, browser execution or whole-package acceptance is claimed.
 
@@ -79,5 +79,25 @@ Input identities: PROJECT.md: SHA-256 ca19ba84895c26c0256d0255d1236b90ab6fd55380
 | R-SUPPLY / R-DROP | Supply, Hold, Projection, rotation and Grounding have one owner each; draw/deadline/repeated-input boundaries are explicit. |
 | R-GHOST | Topmost projected-cell predicate distinguishes rows 9/10 and straddling with no simulation side effects. |
 | R-PENETRATOR | Shared terminal projection, candidate reachability, atomic non-overlap lock, bonuses, Hold prohibition and white rendering are coordinated. |
+
+Findings: no unresolved confirmed conformance issue. Explicit narrow-group count assessments are retained below where applicable, not treated as automatic failures. Checks are document review and structural verification only.
+
+## Revision 4
+
+Reviewer: sdd-specify owner assessment. Scope 5; current root conformance.
+
+Reviewed identities: SPEC.md: SHA-256 f4e68e22dfa11436cc4f0f3ee17058b7aa97f8a629b89b08a1f8f13f452c6069.
+
+Input identities: PROJECT.md: SHA-256 d5796fd5238ef991d841d02e3d6e0499de4eca91202aa83568c5883a5c6a3fd4; ARCHITECTURE.md: SHA-256 d04caed300d5a3ac837227093e6792eacddc6dcf16829e621cce5bdaa07e2d84; DECOMPOSITION.md: SHA-256 c13ae10fb7ebfc5155d95ad5cbbaee1878a3c1e5ca0ce9c157bd6326cef77946.
+
+| Contract group | Structural owner / assessment |
+| --- | --- |
+| R-CORE / R-CLEAR | Geometry, Board resolution and Engine own valid transitions, simultaneous rows and score; fixtures make success/rejection objective. |
+| R-TIME / R-VIEW | Session clock/input and views own suspension, focus, restart and snapshot rendering; lifecycle/errors are specified. |
+| R-QUALITY | Static build and both isolated browser targets are required; provisioning and actual product checks remain future evidence. |
+| R-SUPPLY / R-DROP | Supply, Hold, Projection, rotation and Grounding have one owner each; draw/deadline/repeated-input boundaries are explicit. |
+| R-GHOST | Topmost projected-cell predicate distinguishes rows 9/10 and straddling with no simulation side effects. |
+| R-PENETRATOR | Shared terminal projection, candidate reachability, atomic non-overlap lock, bonuses, Hold prohibition and white rendering are coordinated. |
+| R-SETTINGS | Display/next-spawn mechanical boundaries, retained Hold and all policy combinations have assessable acceptance. |
 
 Findings: no unresolved confirmed conformance issue. Explicit narrow-group count assessments are retained below where applicable, not treated as automatic failures. Checks are document review and structural verification only.

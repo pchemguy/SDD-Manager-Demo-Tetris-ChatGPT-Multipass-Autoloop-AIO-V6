@@ -68,3 +68,22 @@ For current shape/rotation/column, scan candidate integer anchors at or below it
 Hard drop jumps to the terminal destination through intervening occupied cells; ghost projects that same result and applies its current visibility policy. Activation recomputes destination/support; preserve an existing grounded deadline only if still grounded, otherwise cancel it. No overlap may start a grounded timer. Deadline expiry and any immediate lock revalidate final legality before atomic board commit. Invalid state cannot partially commit or destroy cells; surface an invariant failure and suspend instead of corrupting the board. Spawn/hold replacement is regular; activation does not bypass an already failed spawn.
 
 Acceptance A-PEN: earn/cap/spend/restart cases give exact counts; active Hold/repeated activation reject without draw/debit; layered stack fixtures prove ordinary drop stops at first obstruction while penetrator selects the deepest valid gap; transient overlaps preserve every preexisting cell until normal line clearing; candidate rejection prevents impossible final states; ghost/drop/timer agree; screenshots verify white versus regular palettes and bonus counts.
+
+## R-SETTINGS — Selected and effective session settings
+
+Provide labeled side-panel controls with these exact typed choices/defaults:
+
+| Setting | Values | Default | Effect boundary |
+| --- | --- | --- | --- |
+| Ghost visibility | hidden, dynamic, shown | dynamic | Next render |
+| Hard drop | off, on | on | Next active-piece spawn |
+| Next preview | off, on | on | Next render |
+| Hard-drop lock | general, immediate | general | Next active-piece spawn |
+| General lock | failed-down, interval | interval | Next active-piece spawn |
+| Hold | off, on | on | Next active-piece spawn |
+
+All six values are selected-page state; a page reload starts defaults. Changes through valid controls update the selected value; invalid internal event values are rejected without mutation. Each spawned active piece, including a Hold replacement, snapshots hard-drop enablement, Hold enablement and both lock policies. Existing pieces retain their effective snapshot, and the panel clearly marks differing mechanics as applying to the next piece. Display settings read selected values directly. Restart retains selections and applies all settings to its first new piece. A Hold key is evaluated against the outgoing piece's snapshot; if permitted, the incoming piece may adopt Hold=off. Disabled Hold preserves but hides/marks its slot, does not consume supply, and cannot override penetrator's unconditional Hold prohibition.
+
+Hidden suppresses the ghost, shown bypasses midline filtering, dynamic uses R-GHOST; all still omit duplicate ghosts at the active pose. Next preview shows the next queued shape without consuming or reshuffling it; hiding/revealing preview does not change supply. Hard-drop=off makes Space/action a no-op. Immediate hard-drop lock commits at its legal destination in the same command, regardless of general policy; general follows the selected failed-down/interval behavior. No setting change retroactively spends a bonus, converts a piece, clears a timer or forces a lock. Settings controls retain browser keyboard behavior and cannot move the game piece.
+
+Acceptance A-SETTINGS: every option is reachable by keyboard and reflects selected state; mid-piece changes show pending mechanics with unchanged effective behavior; next spawn/Hold/restart adopts them; ghost/preview update next render without consuming supply; disabled hard drop/Hold and all four general/hard-drop policy combinations match the table. Reload resets selections to defaults.
