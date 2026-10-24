@@ -85,3 +85,20 @@ All product tasks are pending. Each task includes focused tests/documentation wi
             Depends on: milestone 3.1 completion/closure, milestone 3.2 completion/closure.
             Scope: complete phase code review, contract/regression checks, blocker repairs, static build/version/v0.3.0 release-note readiness, phase report and HANDOFF. Verify one-task/commit publication evidence before phase integration; report pending integration/release effects accurately.
             Report: docs/dev/reports/phases/3/PHASE-REPORT.md. TODO: carry unresolved eligible noncritical findings with owner/options/provenance. If this phase completes the full intended task list, also include docs/dev/reports/IMPLEMENTATION-REPORT.md aggregating all milestone/phase TODOs, options and resolution provenance.
+
+## Phase 4 — Dynamic ghost visibility
+
+- [ ] Phase 4 — Dynamic ghost visibility
+    - [ ] Milestone 4.1 — Midline-aware ghost
+        - [ ] T-019 — Implement projected-cell visibility policy
+            Scope: src/game/ghost.ts and tests/unit. Depends on: Phase 3 complete/closed and integrated; phase activation verified..
+            Contract: R-GHOST in SPEC. Evidence: Entirely upper/lower, straddling, row-10 boundary and duplicate projections yield specified visibility.
+        - [ ] T-020 — Integrate and verify dynamic ghost rendering
+            Scope: src/ui/board.ts, tests/browser, README.md, package.json and RELEASE-NOTES.md. Depends on: T-019.
+            Contract: R-GHOST, R-QUALITY in SPEC. Evidence: Movement/rotation/Hold/stack/restart update visibility and preserve destination; inspect both browsers and prepare v0.4.0 build/notes.
+            Milestone exit: depend on all earlier tasks in this milestone (T-019); review all milestone code, execute focused/regression checks, repair blockers, and commit report plus HANDOFF with this task completion. Report: docs/dev/reports/phases/4/4.1.md.
+    - [ ] Milestone 4.2 — Phase review
+        - [ ] T-021 — Review, test and report phase 4
+            Depends on: milestone 4.1 completion/closure.
+            Scope: complete phase code review, contract/regression checks, blocker repairs, static build/version/v0.4.0 release-note readiness, phase report and HANDOFF. Verify one-task/commit publication evidence before phase integration; report pending integration/release effects accurately.
+            Report: docs/dev/reports/phases/4/PHASE-REPORT.md. TODO: carry unresolved eligible noncritical findings with owner/options/provenance. If this phase completes the full intended task list, also include docs/dev/reports/IMPLEMENTATION-REPORT.md aggregating all milestone/phase TODOs, options and resolution provenance.
