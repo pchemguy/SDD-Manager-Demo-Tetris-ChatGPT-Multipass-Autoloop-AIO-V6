@@ -155,3 +155,28 @@ All product tasks are pending. Each task includes focused tests/documentation wi
             Depends on: milestone 6.1 completion/closure, milestone 6.2 completion/closure.
             Scope: complete phase code review, contract/regression checks, blocker repairs, static build/version/v0.6.0 release-note readiness, phase report and HANDOFF. Verify one-task/commit publication evidence before phase integration; report pending integration/release effects accurately.
             Report: docs/dev/reports/phases/6/PHASE-REPORT.md. TODO: carry unresolved eligible noncritical findings with owner/options/provenance. If this phase completes the full intended task list, also include docs/dev/reports/IMPLEMENTATION-REPORT.md aggregating all milestone/phase TODOs, options and resolution provenance.
+
+## Phase 7 — Persistent configuration
+
+- [ ] Phase 7 — Persistent configuration
+    - [ ] Milestone 7.1 — Resolution and storage adapters
+        - [ ] T-033 — Implement codecs and independent source resolution
+            Scope: src/config/codec.ts, src/config/settings.ts and tests/unit. Depends on: Phase 6 complete/closed and integrated; phase activation verified..
+            Contract: R-PERSIST in SPEC. Evidence: All six key/value mappings, duplicate/invalid/malformed/omitted inputs, explicit defaults and mixed-source cases match precedence.
+        - [ ] T-034 — Implement cookie and URL adapters
+            Scope: src/platform/cookies.ts, src/platform/url.ts and tests/unit. Depends on: T-033.
+            Contract: R-PERSIST in SPEC. Evidence: Cookie flags/one-year expiry/readback and replaceState preserve unrelated keys/hash; blocked storage and history errors stay independent.
+        - [ ] T-035 — Wire persistent startup and setting changes
+            Scope: src/config/persistence.ts, src/main.ts, src/ui/status.ts and tests/browser. Depends on: T-034.
+            Contract: R-PERSIST, R-SETTINGS in SPEC. Evidence: Resolve before first spawn, save valid explicit URL defaults, avoid omitted/invalid writes and keep selected settings usable with clear failure notices.
+            Milestone exit: depend on all earlier tasks in this milestone (T-033, T-034); review all milestone code, execute focused/regression checks, repair blockers, and commit report plus HANDOFF with this task completion. Report: docs/dev/reports/phases/7/7.1.md.
+    - [ ] Milestone 7.2 — Persistence round trips
+        - [ ] T-036 — Verify persistent settings round trips
+            Scope: tests/browser, README.md, package.json and RELEASE-NOTES.md. Depends on: T-035.
+            Contract: R-PERSIST, R-QUALITY in SPEC. Evidence: Both browsers cover all settings, precedence, reload, hash/query preservation, no navigation, cookie-blocked/history failures and full gameplay regression; prepare v0.7.0 build/notes.
+            Milestone exit: depend on all earlier tasks in this milestone (none); review all milestone code, execute focused/regression checks, repair blockers, and commit report plus HANDOFF with this task completion. Report: docs/dev/reports/phases/7/7.2.md.
+    - [ ] Milestone 7.3 — Phase review
+        - [ ] T-037 — Review, test and report phase 7
+            Depends on: milestone 7.1 completion/closure, milestone 7.2 completion/closure.
+            Scope: complete phase code review, contract/regression checks, blocker repairs, static build/version/v0.7.0 release-note readiness, phase report and HANDOFF. Verify one-task/commit publication evidence before phase integration; report pending integration/release effects accurately.
+            Report: docs/dev/reports/phases/7/PHASE-REPORT.md. TODO: carry unresolved eligible noncritical findings with owner/options/provenance. If this phase completes the full intended task list, also include docs/dev/reports/IMPLEMENTATION-REPORT.md aggregating all milestone/phase TODOs, options and resolution provenance.

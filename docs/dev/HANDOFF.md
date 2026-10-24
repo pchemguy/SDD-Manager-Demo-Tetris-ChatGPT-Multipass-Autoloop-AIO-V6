@@ -1,8 +1,8 @@
 # Project handoff
 
-Checkpoint: reset to scope 6, strict autodoc/autoloop. Recover subsequent operations from owning records and Git.
+Checkpoint: scope 6 DOCS-008 completion, strict autodoc/autoloop. Recover subsequent operations from Git and owning records.
 
-Outcome: scope 5 completed through DOCS-008 at 53a5f0624ae0ca54cd8d18a1c4225c55e52bd828; retained documents/ranges require current-scope revision and QC.
+Outcome: current cumulative documents through TASKS and scoped QC prepared; six supplied scopes reached their final documentation stop. No implementation or package QC is claimed.
 
 ## Workflow and sources
 
@@ -13,7 +13,7 @@ Outcome: scope 5 completed through DOCS-008 at 53a5f0624ae0ca54cd8d18a1c4225c55e
 ## Scope and human decisions
 
 - Authorized: prepare six cumulative scopes in strict autodoc/autoloop mode; per-pass and cross-scope proposals are in DOCS_PREPARATION.
-- Next stop: perform only the next predefined reset, retain prior ranges and reopen the same eight issues before PROJECT revision.
+- Next stop: stop before DOCS-009, whole-package QC, documentation integration or implementation; explicit advance is required.
 - Tracking: enabled by root AGENTS; milestone #1 and preparation issues #1–9 verified. Push/read back each owned commit. Standard reporting.
 - Implementation requires subsequent authorization. Releases are required after each later verified integrated implementation phase.
 
@@ -27,5 +27,5 @@ Outcome: scope 5 completed through DOCS-008 at 53a5f0624ae0ca54cd8d18a1c4225c55e
 
 ## Pending work and next action
 
-- Publish/read back this reset and reopen/read back the same issues #2–9; confirm milestone #1 remains open.
-- Then revise retained PROJECT through TASKS for scope 6; later PROJECT approval is waived under accepted autoloop. Preserve earlier phase/task ranges. Stop after scope 6 DOCS-008 before package QC/integration/implementation.
+- Publish/read back scope 6 DOCS-008 completion, then close/read back issue #8. Confirm DOCS-009 issue #9 and milestone #1 remain open.
+- Stop. An explicit advance may select package QC; implementation still needs authorization and integrated preparation.
