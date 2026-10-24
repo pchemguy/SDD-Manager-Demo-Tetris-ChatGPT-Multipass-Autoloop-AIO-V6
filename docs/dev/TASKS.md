@@ -130,3 +130,28 @@ All product tasks are pending. Each task includes focused tests/documentation wi
             Depends on: milestone 5.1 completion/closure, milestone 5.2 completion/closure.
             Scope: complete phase code review, contract/regression checks, blocker repairs, static build/version/v0.5.0 release-note readiness, phase report and HANDOFF. Verify one-task/commit publication evidence before phase integration; report pending integration/release effects accurately.
             Report: docs/dev/reports/phases/5/PHASE-REPORT.md. TODO: carry unresolved eligible noncritical findings with owner/options/provenance. If this phase completes the full intended task list, also include docs/dev/reports/IMPLEMENTATION-REPORT.md aggregating all milestone/phase TODOs, options and resolution provenance.
+
+## Phase 6 — Session configuration
+
+- [ ] Phase 6 — Session configuration
+    - [ ] Milestone 6.1 — Settings model and preview
+        - [ ] T-028 — Implement settings state and spawn snapshots
+            Scope: src/config/settings.ts, src/game/types.ts, src/game/engine.ts and tests/unit. Depends on: Phase 5 complete/closed and integrated; phase activation verified..
+            Contract: R-SETTINGS in SPEC. Evidence: Defaults, rejected values, next-piece/Hold/restart mechanics and all lock-policy combinations match effective snapshots.
+        - [ ] T-029 — Implement display policy and preview
+            Scope: src/game/ghost.ts, src/game/supply.ts, src/ui/board.ts and tests/unit. Depends on: T-028.
+            Contract: R-SETTINGS in SPEC. Evidence: hidden/dynamic/shown and next preview change display without consuming/reordering supply or affecting active state.
+            Milestone exit: depend on all earlier tasks in this milestone (T-028); review all milestone code, execute focused/regression checks, repair blockers, and commit report plus HANDOFF with this task completion. Report: docs/dev/reports/phases/6/6.1.md.
+    - [ ] Milestone 6.2 — Configuration controls and round integration
+        - [ ] T-030 — Integrate accessible settings panel
+            Scope: src/ui/settings.ts, src/ui/status.ts, src/app/session.ts and tests/browser. Depends on: T-029.
+            Contract: R-SETTINGS in SPEC. Evidence: Each choice is reachable; controls do not move the board; pending indicators, retained Hold and penetrator prohibition remain clear.
+        - [ ] T-031 — Verify session setting combinations
+            Scope: tests/unit, tests/browser, README.md, package.json and RELEASE-NOTES.md. Depends on: T-030.
+            Contract: R-SETTINGS, R-QUALITY in SPEC. Evidence: Exercise lock-policy combinations, mid-piece change, Hold, restart, preview and reload-default behavior on both browsers; prepare v0.6.0 build/notes.
+            Milestone exit: depend on all earlier tasks in this milestone (T-030); review all milestone code, execute focused/regression checks, repair blockers, and commit report plus HANDOFF with this task completion. Report: docs/dev/reports/phases/6/6.2.md.
+    - [ ] Milestone 6.3 — Phase review
+        - [ ] T-032 — Review, test and report phase 6
+            Depends on: milestone 6.1 completion/closure, milestone 6.2 completion/closure.
+            Scope: complete phase code review, contract/regression checks, blocker repairs, static build/version/v0.6.0 release-note readiness, phase report and HANDOFF. Verify one-task/commit publication evidence before phase integration; report pending integration/release effects accurately.
+            Report: docs/dev/reports/phases/6/PHASE-REPORT.md. TODO: carry unresolved eligible noncritical findings with owner/options/provenance. If this phase completes the full intended task list, also include docs/dev/reports/IMPLEMENTATION-REPORT.md aggregating all milestone/phase TODOs, options and resolution provenance.

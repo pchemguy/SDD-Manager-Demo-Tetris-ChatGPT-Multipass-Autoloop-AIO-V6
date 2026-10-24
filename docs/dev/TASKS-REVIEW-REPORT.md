@@ -4,9 +4,9 @@
 
 State: Ready for dependent implementation preparation, subject to the separate package-QC/integration/authorization gates.
 
-Reviewed: TASKS.md: SHA-256 660c99740a03382a45a000e01ca361c8d240d354d0c72255e6c03f02e2f98621.
+Reviewed: TASKS.md: SHA-256 22d1f70b65b3b87625a31689a8a32d05f9d50bd79b817a7a43ca8968f5391ec9.
 
-Governing inputs: SPEC.md: SHA-256 87e822bb79c7c7de42e0314804a9bc0b6bf31f97e590e71178ae462979b3b2f3; SPEC-REVIEW-REPORT.md: SHA-256 90ed85adbbe6d95def5167a7e1c10de0f308f02ef105d3b816b586917817a10b; PLAN.md: SHA-256 f675ce063118ca8ea025b134accb6e0c4efef4085a1da0fb06ad02cdb4f79755; PLAN-REVIEW-REPORT.md: SHA-256 af8d2f0fb7d1893ad7774d75a3c60271662e3a242998c778cc6571a38c60430f; layout.md: SHA-256 31282117af53ec44801fa4980fb4f2418bb98bbfe39a38f2c6525b027496df20.
+Governing inputs: SPEC.md: SHA-256 f4e68e22dfa11436cc4f0f3ee17058b7aa97f8a629b89b08a1f8f13f452c6069; SPEC-REVIEW-REPORT.md: SHA-256 c6561ce1cec276b314823c2b2be9ebc22defe521169648684279606da774dabd; PLAN.md: SHA-256 92144ded1b8ab0b753c7a29fd208e7050c127f191d88e6a8b9987d70e59239f4; PLAN-REVIEW-REPORT.md: SHA-256 d0768cd42af5d428beb19914fbfc83189993d1ac4e6b5cd0bee7c5590b468c19; layout.md: SHA-256 4b36c4fe6a55ebc88a668fdac2332c620b6b23a809fc38167009ee14dcc48b8c.
 
 Checks: semantic owner review of contract/design coverage, boundaries, dependency order, error/lifecycle obligations and end-state language; deterministic structural checks validate Markdown/link/hierarchy invariants. All confirmed current-scope findings resolved. No code, browser execution or whole-package acceptance is claimed.
 
@@ -96,6 +96,33 @@ TASKS contains 27 unique sequential IDs, each under exactly one milestone/phase 
 | 4.1 | 2 | No standalone milestone review | Narrow integrated concern; explicit 1–2 fragmentation check retained this boundary because another split adds no independent outcome. Final task owns whole-milestone review/report/HANDOFF. |
 | 5.1 | 3 | No standalone milestone review | Within 3–5 guidance; coherent component-sized outcomes and final-task review obligations. |
 | 5.2 | 2 | No standalone milestone review | Narrow integrated concern; explicit 1–2 fragmentation check retained this boundary because another split adds no independent outcome. Final task owns whole-milestone review/report/HANDOFF. |
+
+
+Findings: no unresolved confirmed conformance issue. Explicit narrow-group count assessments are retained below where applicable, not treated as automatic failures. Checks are document review and structural verification only.
+
+## Revision 4
+
+Reviewer: sdd-tasks owner assessment. Scope 5; current root conformance.
+
+Reviewed identities: TASKS.md: SHA-256 22d1f70b65b3b87625a31689a8a32d05f9d50bd79b817a7a43ca8968f5391ec9.
+
+Input identities: SPEC.md: SHA-256 f4e68e22dfa11436cc4f0f3ee17058b7aa97f8a629b89b08a1f8f13f452c6069; SPEC-REVIEW-REPORT.md: SHA-256 c6561ce1cec276b314823c2b2be9ebc22defe521169648684279606da774dabd; PLAN.md: SHA-256 92144ded1b8ab0b753c7a29fd208e7050c127f191d88e6a8b9987d70e59239f4; PLAN-REVIEW-REPORT.md: SHA-256 d0768cd42af5d428beb19914fbfc83189993d1ac4e6b5cd0bee7c5590b468c19; layout.md: SHA-256 4b36c4fe6a55ebc88a668fdac2332c620b6b23a809fc38167009ee14dcc48b8c.
+
+TASKS contains 32 unique sequential IDs, each under exactly one milestone/phase with four-space hierarchy. Every delivery milestone maps to PLAN, SPEC and intended edit scope; task prerequisites point backward or to a completed predecessor phase. All delivery groups have fewer than four tasks, so standalone milestone reviews are omitted and final delivery tasks carry whole-milestone code review/testing/repairs/report/HANDOFF. Every phase retains exactly one special phase-review task. Existing task blocks were compared byte for byte, including IDs, order, scope, parents, dependencies and exits.
+
+| Delivery milestone | Delivery tasks | Excluded reviews | Assessment |
+| --- | --- | --- | --- |
+| 1.1 | 3 | No standalone milestone review | Within 3–5 guidance; coherent component-sized outcomes and final-task review obligations. |
+| 1.2 | 3 | No standalone milestone review | Within 3–5 guidance; coherent component-sized outcomes and final-task review obligations. |
+| 2.1 | 3 | No standalone milestone review | Within 3–5 guidance; coherent component-sized outcomes and final-task review obligations. |
+| 2.2 | 2 | No standalone milestone review | Narrow integrated concern; explicit 1–2 fragmentation check retained this boundary because another split adds no independent outcome. Final task owns whole-milestone review/report/HANDOFF. |
+| 3.1 | 2 | No standalone milestone review | Narrow integrated concern; explicit 1–2 fragmentation check retained this boundary because another split adds no independent outcome. Final task owns whole-milestone review/report/HANDOFF. |
+| 3.2 | 2 | No standalone milestone review | Narrow integrated concern; explicit 1–2 fragmentation check retained this boundary because another split adds no independent outcome. Final task owns whole-milestone review/report/HANDOFF. |
+| 4.1 | 2 | No standalone milestone review | Narrow integrated concern; explicit 1–2 fragmentation check retained this boundary because another split adds no independent outcome. Final task owns whole-milestone review/report/HANDOFF. |
+| 5.1 | 3 | No standalone milestone review | Within 3–5 guidance; coherent component-sized outcomes and final-task review obligations. |
+| 5.2 | 2 | No standalone milestone review | Narrow integrated concern; explicit 1–2 fragmentation check retained this boundary because another split adds no independent outcome. Final task owns whole-milestone review/report/HANDOFF. |
+| 6.1 | 2 | No standalone milestone review | Narrow integrated concern; explicit 1–2 fragmentation check retained this boundary because another split adds no independent outcome. Final task owns whole-milestone review/report/HANDOFF. |
+| 6.2 | 2 | No standalone milestone review | Narrow integrated concern; explicit 1–2 fragmentation check retained this boundary because another split adds no independent outcome. Final task owns whole-milestone review/report/HANDOFF. |
 
 
 Findings: no unresolved confirmed conformance issue. Explicit narrow-group count assessments are retained below where applicable, not treated as automatic failures. Checks are document review and structural verification only.
