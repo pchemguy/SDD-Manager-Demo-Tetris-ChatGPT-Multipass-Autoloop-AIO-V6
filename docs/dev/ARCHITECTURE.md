@@ -38,3 +38,7 @@ A pure visibility predicate consumes the landing projection and board geometry. 
 ## Penetrator landing strategy
 
 The landing service selects an ordinary first-obstacle destination or a penetrator deepest valid destination. The engine owns activation eligibility, bonus debit/award, and mode lifetime; all movement, gravity, ghost and hard drop use this same strategy. Transient overlap is represented only by the active piece, never by overwriting settled cells. Candidate moves require a legal destination at or below them; a grounded penetrator is at its terminal destination. This prevents a piece from passing below every legal locking position.
+
+## Configuration boundary
+
+A typed settings owner stores selected values. Presentation reads display settings immediately; spawn snapshots mechanical settings into the active-piece state. The settings panel dispatches typed changes rather than touching the board. Pending changes are visible beside controls; restarting adopts the selected settings. The settings owner is page-session memory and has no persistence side effects.
