@@ -79,3 +79,21 @@ A straddling ghost hides and a wholly lower-half ghost appears immediately on re
 ### Milestone 4.2 — Phase review
 
 After all delivery milestones complete and close, review the complete phase code and interactions, verify its included contracts and prior-phase regressions, repair blockers and retain the phase report. No later independent capability is required at this exit. Integrate the verified phase into main through an explicit two-parent merge, verify/publish the target, then publish the corresponding v0.4.0 tag and GitHub release with current release notes. No phase or release operation executes without the subsequently authorized implementation range.
+
+## Phase 5 — Penetrator play
+
+Outcome: Earn/spend capped bonuses for white pieces traversing stacks to safe deepest landings. Preserve earlier play, dynamic ghost and lock-delay semantics.
+
+Contracts: R-PENETRATOR. Release target: v0.5.0. Dependency: Phase 4 complete, reviewed, closed and integrated/published; authorized implementation range includes this phase.
+
+### Milestone 5.1 — Deep landing and activation
+
+Penetrator movement is safe through occupied transit and debits one charge with Hold disabled. Exit: integrate the milestone capability, review code and run applicable focused/regression checks; fix blockers, retain a milestone report and HANDOFF. Demonstrate the stated result for human continue/amend/simplify/stop judgment without inventing an additional authorization gate.
+
+### Milestone 5.2 — Penetrator presentation and regression
+
+White active/settled penetrators, ghost agreement and bonus symbols are clear in complete rounds. Exit: integrate the milestone capability, review code and run applicable focused/regression checks; fix blockers, retain a milestone report and HANDOFF. Demonstrate the stated result for human continue/amend/simplify/stop judgment without inventing an additional authorization gate.
+
+### Milestone 5.3 — Phase review
+
+After all delivery milestones complete and close, review the complete phase code and interactions, verify its included contracts and prior-phase regressions, repair blockers and retain the phase report. No later independent capability is required at this exit. Integrate the verified phase into main through an explicit two-parent merge, verify/publish the target, then publish the corresponding v0.5.0 tag and GitHub release with current release notes. No phase or release operation executes without the subsequently authorized implementation range.

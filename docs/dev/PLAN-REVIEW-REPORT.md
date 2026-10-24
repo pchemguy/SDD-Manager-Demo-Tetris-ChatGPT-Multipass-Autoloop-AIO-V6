@@ -2,15 +2,15 @@
 
 ## Current gate
 
-State: Ready for dependent TASKS derivation.
+State: Ready for dependent layout preparation; TASKS readiness awaits current layout review.
 
-Reviewed: PLAN.md: SHA-256 6404d873f76866670bb3429b9c1926a8f3469cc1f05c6a56d268f38700e4d763; layout.md: SHA-256 8ca2ec9b7188b3f4bc1a9fe09c3338ac7dd958b160af995c8063196a4fde55cf.
+Reviewed: PLAN.md: SHA-256 f675ce063118ca8ea025b134accb6e0c4efef4085a1da0fb06ad02cdb4f79755.
 
-Governing inputs: SPEC.md: SHA-256 022a23af5149c5482ab5437b575ad82753cbafee1b86f6f38c49f8d30b354606; SPEC-REVIEW-REPORT.md: SHA-256 c12f0c31b635bddb094af7299edca2360c754401d81f119629a9f51084223401; ARCHITECTURE.md: SHA-256 0e3d4daaba9fc97a4e257dca32c3bbdd554a67a74e20076ac6ce741ca112cb5c; DECOMPOSITION.md: SHA-256 9e2db10ff27df42629f60249ba11254dc4b22536f8ff8ea40b958eb6759c1e1e.
+Governing inputs: SPEC.md: SHA-256 87e822bb79c7c7de42e0314804a9bc0b6bf31f97e590e71178ae462979b3b2f3; SPEC-REVIEW-REPORT.md: SHA-256 90ed85adbbe6d95def5167a7e1c10de0f308f02ef105d3b816b586917817a10b; ARCHITECTURE.md: SHA-256 2a377c37a55d6834491062486d7b636f22dfb3c5f7cce2408c8d3edfa24e7db5; DECOMPOSITION.md: SHA-256 47308c7ea7ba7d41311267c090b56967cf20d78233b75adeecca3956148ff835.
 
 Checks: semantic owner review of contract/design coverage, boundaries, dependency order, error/lifecycle obligations and end-state language; deterministic structural checks validate Markdown/link/hierarchy invariants. All confirmed current-scope findings resolved. No code, browser execution or whole-package acceptance is claimed.
 
-Remaining blockers within this scoped review: none.
+Remaining blockers within this scoped review: none. Current layout coverage is pending; TASKS use is blocked until combined review.
 
 ## Initial review
 
@@ -101,5 +101,26 @@ Reviewed identities: PLAN.md: SHA-256 6404d873f76866670bb3429b9c1926a8f3469cc1f0
 Input identities: SPEC.md: SHA-256 022a23af5149c5482ab5437b575ad82753cbafee1b86f6f38c49f8d30b354606; SPEC-REVIEW-REPORT.md: SHA-256 c12f0c31b635bddb094af7299edca2360c754401d81f119629a9f51084223401; ARCHITECTURE.md: SHA-256 0e3d4daaba9fc97a4e257dca32c3bbdd554a67a74e20076ac6ce741ca112cb5c; DECOMPOSITION.md: SHA-256 9e2db10ff27df42629f60249ba11254dc4b22536f8ff8ea40b958eb6759c1e1e.
 
 Combined recheck: each logical component has a source/test owner, dependency direction matches architecture, integration/report paths support the planned milestones and absent implementation is explicit. Prior phase blocks remain unchanged; layout assigns new concerns without creating duplicate engines or test-only production globals. No placement blocker remains.
+
+Findings: no unresolved confirmed conformance issue. Explicit narrow-group count assessments are retained below where applicable, not treated as automatic failures. Checks are document review and structural verification only.
+
+## Revision 6
+
+Reviewer: sdd-plan owner assessment. Scope 4; current root conformance.
+
+Reviewed identities: PLAN.md: SHA-256 f675ce063118ca8ea025b134accb6e0c4efef4085a1da0fb06ad02cdb4f79755.
+
+Input identities: SPEC.md: SHA-256 87e822bb79c7c7de42e0314804a9bc0b6bf31f97e590e71178ae462979b3b2f3; SPEC-REVIEW-REPORT.md: SHA-256 90ed85adbbe6d95def5167a7e1c10de0f308f02ef105d3b816b586917817a10b; ARCHITECTURE.md: SHA-256 2a377c37a55d6834491062486d7b636f22dfb3c5f7cce2408c8d3edfa24e7db5; DECOMPOSITION.md: SHA-256 47308c7ea7ba7d41311267c090b56967cf20d78233b75adeecca3956148ff835.
+
+Each phase has an explicit usable outcome, included/excluded scope, predecessor, scoped exits, regression/integration and version route. Phase 1 alone is the minimal classic game. Read each listed contract against its canonical SPEC section and acceptance route; every current contract has a delivery route. No final backlog bucket, quota-driven scope or unscoped browser waiver is present. Prior established phase blocks were compared byte for byte and retained unchanged.
+
+| Group | Delivery milestones | Excluded reviews | Assessment |
+| --- | --- | --- | --- |
+| Phase 1 | 2 | One special phase review milestone | Two cohesive integrated outcomes; a small phase is justified by the bounded capability and early complete behavior, with no padding to meet 3–5 guidance. |
+| Phase 2 | 2 | One special phase review milestone | Two cohesive integrated outcomes; a small phase is justified by the bounded capability and early complete behavior, with no padding to meet 3–5 guidance. |
+| Phase 3 | 2 | One special phase review milestone | Two cohesive integrated outcomes; a small phase is justified by the bounded capability and early complete behavior, with no padding to meet 3–5 guidance. |
+| Phase 4 | 1 | One special phase review milestone | Single narrow display rule and its integrated rendering; splitting would add boundary overhead without independent product value. |
+| Phase 5 | 2 | One special phase review milestone | Two cohesive integrated outcomes; a small phase is justified by the bounded capability and early complete behavior, with no padding to meet 3–5 guidance. |
+
 
 Findings: no unresolved confirmed conformance issue. Explicit narrow-group count assessments are retained below where applicable, not treated as automatic failures. Checks are document review and structural verification only.
