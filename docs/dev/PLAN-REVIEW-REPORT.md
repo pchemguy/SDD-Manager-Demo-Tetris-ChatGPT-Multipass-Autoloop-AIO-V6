@@ -2,15 +2,15 @@
 
 ## Current gate
 
-State: Ready for dependent layout preparation; TASKS readiness awaits current layout review.
+State: Ready for dependent TASKS derivation.
 
-Reviewed: PLAN.md: SHA-256 cefe88d1910a19bb1dae6941a50a5533addfb32a599e7e65b4a5f6a433eb627a.
+Reviewed: PLAN.md: SHA-256 cefe88d1910a19bb1dae6941a50a5533addfb32a599e7e65b4a5f6a433eb627a; layout.md: SHA-256 738087000c740213070df238cd196e79d3d86e0d49a8e4b0640eec188ffa1b17.
 
 Governing inputs: SPEC.md: SHA-256 078665f0bcc266461dff794fe255e059cd796ef9385b15e8e8f79461398d4dd7; SPEC-REVIEW-REPORT.md: SHA-256 188e002c5503078035200a49f6371de6d0acef097e7f3547e455a1fc553dff2c; ARCHITECTURE.md: SHA-256 2a58c628d2d2cb8db60eb13cfa89aaa55f7c4f2b116a14f6658de67f01c8be1f; DECOMPOSITION.md: SHA-256 376547054622f612c63683659578526ea2f892a29dca15c7c3d3a850ee6d26a9.
 
 Checks: semantic owner review of contract/design coverage, boundaries, dependency order, error/lifecycle obligations and end-state language; deterministic structural checks validate Markdown/link/hierarchy invariants. All confirmed current-scope findings resolved. No code, browser execution or whole-package acceptance is claimed.
 
-Remaining blockers within this scoped review: none. Current layout coverage is pending; TASKS use is blocked until combined review.
+Remaining blockers within this scoped review: none.
 
 ## Initial review
 
@@ -57,5 +57,17 @@ Each phase has an explicit usable outcome, included/excluded scope, predecessor,
 | Phase 2 | 2 | One special phase review milestone | Two cohesive integrated outcomes; a small phase is justified by the bounded capability and early complete behavior, with no padding to meet 3–5 guidance. |
 | Phase 3 | 2 | One special phase review milestone | Two cohesive integrated outcomes; a small phase is justified by the bounded capability and early complete behavior, with no padding to meet 3–5 guidance. |
 
+
+Findings: no unresolved confirmed conformance issue. Explicit narrow-group count assessments are retained below where applicable, not treated as automatic failures. Checks are document review and structural verification only.
+
+## Revision 3
+
+Reviewer: sdd-plan owner assessment. Scope 2; combined PLAN/layout recheck.
+
+Reviewed identities: PLAN.md: SHA-256 cefe88d1910a19bb1dae6941a50a5533addfb32a599e7e65b4a5f6a433eb627a; layout.md: SHA-256 738087000c740213070df238cd196e79d3d86e0d49a8e4b0640eec188ffa1b17.
+
+Input identities: SPEC.md: SHA-256 078665f0bcc266461dff794fe255e059cd796ef9385b15e8e8f79461398d4dd7; SPEC-REVIEW-REPORT.md: SHA-256 188e002c5503078035200a49f6371de6d0acef097e7f3547e455a1fc553dff2c; ARCHITECTURE.md: SHA-256 2a58c628d2d2cb8db60eb13cfa89aaa55f7c4f2b116a14f6658de67f01c8be1f; DECOMPOSITION.md: SHA-256 376547054622f612c63683659578526ea2f892a29dca15c7c3d3a850ee6d26a9.
+
+Combined recheck: each logical component has a source/test owner, dependency direction matches architecture, integration/report paths support the planned milestones and absent implementation is explicit. Prior phase blocks remain unchanged; layout assigns new concerns without creating duplicate engines or test-only production globals. No placement blocker remains.
 
 Findings: no unresolved confirmed conformance issue. Explicit narrow-group count assessments are retained below where applicable, not treated as automatic failures. Checks are document review and structural verification only.

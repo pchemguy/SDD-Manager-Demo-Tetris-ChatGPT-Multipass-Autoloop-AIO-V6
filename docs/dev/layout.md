@@ -20,3 +20,7 @@ The paths below allocate the intended implementation. Existing root policies and
 Rules import no DOM, cookie or URL APIs. Browser adapters depend inward on typed model contracts. Unit fixtures live under tests/fixtures and use public typed engine boundaries; browser checks exercise the actual served page. Keep generated dist/, browser binaries, profiles, caches and test output untracked and outside production assets. Assign one absolute project-owned PLAYWRIGHT_BROWSERS_PATH consistently for install and execution; never attach personal sessions or use unowned browser installations. Do not modify /pyenv.
 
 Development roots and adjacent scoped QC reports live in docs/dev/. Implementation reports use docs/dev/reports/phases/<phase-id>/<milestone-id>.md and PHASE-REPORT.md; final implementation report uses docs/dev/reports/IMPLEMENTATION-REPORT.md. Report paths are future outputs, not links to missing files. docs/ai-logs contains manual provenance and is excluded from routine source/QC loading. Existing policies and .agents/plugins/sdd-manager remain governing/supporting assets, not product runtime code.
+
+## Assisted-play placement
+
+Landing projection belongs to src/game/landing.ts with tests/unit/landing.test.ts. Hold and grounded timing remain engine state, supply remains in its own module, and Hold controls/slot remain Status view and Input adapter responsibilities. No separate framework or duplicate collision implementation is introduced.
