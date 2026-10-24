@@ -30,3 +30,7 @@ Rules accept deterministic random and clock inputs. Session checks use synthetic
 ## Piece services and projections
 
 Piece supply owns a seeded-testable 7-bag queue; hold owns its slot and cycle eligibility. The engine exposes a pure landing projection for the active pose. The renderer draws a ghost from that result and never performs its own collision search. Rotation search uses documented horizontal kick candidates; lock timing remains a game-clock concern in the engine, driven by Session. This keeps keyboard and gravity behavior consistent. Hold produces a fresh active piece through the same spawn path and resets that piece's local timing.
+
+## Ghost presentation policy
+
+A pure visibility predicate consumes the landing projection and board geometry. It classifies the topmost occupied projected cell against the midline. The policy never changes the active piece, collision handling, supply or clock. Presentation recomputes it from each published snapshot so it cannot lag a changed landing.
