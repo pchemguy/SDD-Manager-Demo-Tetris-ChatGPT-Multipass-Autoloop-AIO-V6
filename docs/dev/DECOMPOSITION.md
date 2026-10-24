@@ -29,3 +29,7 @@ Supply maintains the shuffled queue and draw cursor; consuming a piece is explic
 ## Visibility component
 
 Ghost visibility accepts projected occupied cells and visible board height, returning a Boolean. Renderer owns its application on every redraw; Engine and Projection remain independent of whether a ghost is drawn. Tests cover positions entirely above, straddling and exactly at the midline.
+
+## Penetrator components
+
+Projection supplies deepest-valid search as an alternate landing strategy and rejects candidates with no legal landing at/below them. Engine owns bonuses (0–3), active penetrator flag, activation debit, hold rejection and four-line award. Grounding consumes the selected destination, so overlapping transit cannot start a lock timer. Board resolution revalidates final non-overlap before committing; a failed invariant never partially writes. Renderer overrides every active penetrator cell to white and Status view displays one bonus symbol per available charge. A locked penetrator retains white cells on the board; regular tetromino palettes exclude white.
