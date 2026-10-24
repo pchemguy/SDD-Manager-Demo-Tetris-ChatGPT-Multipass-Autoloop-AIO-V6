@@ -102,3 +102,31 @@ All product tasks are pending. Each task includes focused tests/documentation wi
             Depends on: milestone 4.1 completion/closure.
             Scope: complete phase code review, contract/regression checks, blocker repairs, static build/version/v0.4.0 release-note readiness, phase report and HANDOFF. Verify one-task/commit publication evidence before phase integration; report pending integration/release effects accurately.
             Report: docs/dev/reports/phases/4/PHASE-REPORT.md. TODO: carry unresolved eligible noncritical findings with owner/options/provenance. If this phase completes the full intended task list, also include docs/dev/reports/IMPLEMENTATION-REPORT.md aggregating all milestone/phase TODOs, options and resolution provenance.
+
+## Phase 5 — Penetrator play
+
+- [ ] Phase 5 — Penetrator play
+    - [ ] Milestone 5.1 — Deep landing and activation
+        - [ ] T-022 — Implement deepest valid landing strategy
+            Scope: src/game/landing.ts, src/game/geometry.ts and tests/unit. Depends on: Phase 4 complete/closed and integrated; phase activation verified..
+            Contract: R-PENETRATOR in SPEC. Evidence: Layered gaps, floor, overlapping transit and stranded-candidate rejection preserve the settled board.
+        - [ ] T-023 — Implement bonus and activation lifecycle
+            Scope: src/game/engine.ts and tests/unit. Depends on: T-022.
+            Contract: R-PENETRATOR in SPEC. Evidence: Zero/cap/award/debit/repeated activation/restart cases and active Hold rejection preserve supply and counts.
+        - [ ] T-024 — Integrate penetrator movement and timing
+            Scope: src/game/engine.ts, src/app/input.ts and tests/unit. Depends on: T-023.
+            Contract: R-PENETRATOR, R-DROP in SPEC. Evidence: Gravity/rotation/soft/hard drop use the same terminal destination; activation retains/cancels grounding correctly and no invalid lock commits.
+            Milestone exit: depend on all earlier tasks in this milestone (T-022, T-023); review all milestone code, execute focused/regression checks, repair blockers, and commit report plus HANDOFF with this task completion. Report: docs/dev/reports/phases/5/5.1.md.
+    - [ ] Milestone 5.2 — Penetrator presentation and regression
+        - [ ] T-025 — Render mode and bonus state
+            Scope: src/ui/board.ts, src/ui/status.ts and tests/browser. Depends on: T-024.
+            Contract: R-PENETRATOR, R-VIEW in SPEC. Evidence: Pure-white penetrator cells, nonwhite regular palette, accessible bonus count and activation/hold states agree with engine snapshots.
+        - [ ] T-026 — Verify penetrator round integration
+            Scope: tests/unit, tests/browser, README.md, package.json and RELEASE-NOTES.md. Depends on: T-025.
+            Contract: R-PENETRATOR, R-QUALITY in SPEC. Evidence: Earn-to-activation-to-safe-lock flows, ordinary/penetrator comparison and dynamic ghost pass on both browsers; prepare v0.5.0 build/notes.
+            Milestone exit: depend on all earlier tasks in this milestone (T-025); review all milestone code, execute focused/regression checks, repair blockers, and commit report plus HANDOFF with this task completion. Report: docs/dev/reports/phases/5/5.2.md.
+    - [ ] Milestone 5.3 — Phase review
+        - [ ] T-027 — Review, test and report phase 5
+            Depends on: milestone 5.1 completion/closure, milestone 5.2 completion/closure.
+            Scope: complete phase code review, contract/regression checks, blocker repairs, static build/version/v0.5.0 release-note readiness, phase report and HANDOFF. Verify one-task/commit publication evidence before phase integration; report pending integration/release effects accurately.
+            Report: docs/dev/reports/phases/5/PHASE-REPORT.md. TODO: carry unresolved eligible noncritical findings with owner/options/provenance. If this phase completes the full intended task list, also include docs/dev/reports/IMPLEMENTATION-REPORT.md aggregating all milestone/phase TODOs, options and resolution provenance.

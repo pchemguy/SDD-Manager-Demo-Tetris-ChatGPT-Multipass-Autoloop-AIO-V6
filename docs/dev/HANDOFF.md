@@ -1,8 +1,8 @@
 # Project handoff
 
-Checkpoint: reset to scope 4, strict autodoc/autoloop. Recover subsequent operations from owning records and Git.
+Checkpoint: scope 4 DOCS-008 completion, strict autodoc/autoloop. Recover subsequent operations from Git and owning records.
 
-Outcome: scope 3 completed through DOCS-008 at 59d41e912b9274d8a75b549933f7e03b76919614; retained documents/ranges require current-scope revision and QC.
+Outcome: current cumulative documents through TASKS and scoped QC prepared; next predefined scope reset remains authorized. No implementation or package QC is claimed.
 
 ## Workflow and sources
 
@@ -27,5 +27,5 @@ Outcome: scope 3 completed through DOCS-008 at 59d41e912b9274d8a75b549933f7e03b7
 
 ## Pending work and next action
 
-- Publish/read back this reset and reopen/read back the same issues #2–9; confirm milestone #1 remains open.
-- Then revise retained PROJECT through TASKS for scope 4; later PROJECT approval is waived under accepted autoloop. Preserve earlier phase/task ranges. Stop after scope 6 DOCS-008 before package QC/integration/implementation.
+- Publish/read back scope 4 DOCS-008 completion, then close/read back issue #8. Confirm DOCS-009 issue #9 and milestone #1 remain open.
+- Next: reset to scope 5, reopen/read back issues #2–9, then revise retained PROJECT through TASKS.
